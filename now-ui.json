@@ -1,7 +1,7 @@
 {
 	"components": {
 	    "x-772283-scope-multicardrender": {
-	        "innerComponents": [],
+	        "innerComponents": ["now-card"],
 			"uiBuilder": {
 				"associatedTypes": ["global.core", "global.landing-page"],
 				"label": "Multi Card Render",
@@ -15,6 +15,12 @@
 					"label": "JSON Data", 
 					"readOnly": false,       
 					"required": false
+				}
+			],
+			"actions" : [
+				{
+					"name": "ACTION_NAME_A",
+					"description": "test"
 				}
 			]
 	    }

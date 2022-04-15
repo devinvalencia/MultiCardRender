@@ -4,27 +4,15 @@ import styles from "./styles.scss";
 import "@servicenow/now-card";
 
 // Disable before updating for UI builder
-const data = require("./idealData.json");
-
-
-// 4-15 : Included selectedField in payload
-const testFunc = (label, {dispatch}) => {
-	// updateProperties({currentField: `${record.property.propertyName}`});
-	if (label == 'Merge') {
-		dispatch('ACTION_NAME_A');
-	} else if (label == 'Overwrite Current') {
-		dispatch('ACTION_NAME_B');
-	}
-};
+// const data = require("./idealData.json");
 
 // 4-15 : Update selectedField property on click
-const view = (state, { updateState}) => {
-	const { properties} = state;
+const view = (state, { updateState }) => {
+	const { properties } = state;
 
 	return (
 		<div>
 			{properties.records.map((record) => (
-				
 				<now-card
 					size="lg"
 					interaction="none"
@@ -33,14 +21,30 @@ const view = (state, { updateState}) => {
 				>
 					<now-card-header
 						tagline={{ label: `${record.property.propertyName}` }}
-						heading={{ label: `${record.property.currentDisplayValue} vs ${record.property.newDisplayValue}`, size: "md", lines: 2 }}
+						heading={{
+							label: `${record.property.currentDisplayValue} vs ${record.property.newDisplayValue}`,
+							size: "md",
+							lines: 2,
+						}}
 						caption={{ label: "Select Choice", lines: 2 }}
 					></now-card-header>
 					<now-card-actions
 						items={[
-							{ label: "Keep Current", icon: "thumbs-up-outline" },
-							{ label: "Overwrite Current", icon: "pencil-outline" },
-							{ label: "Merge", icon: "download-outline" },
+							{
+								forField: `${record.property.propertyName}`,
+								label: "Keep Current",
+								icon: "thumbs-up-outline",
+							},
+							{
+								forField: `${record.property.propertyName}`,
+								label: "Overwrite Current",
+								icon: "pencil-outline",
+							},
+							{
+								forField: `${record.property.propertyName}`,
+								label: "Merge",
+								icon: "download-outline",
+							},
 						]}
 					></now-card-actions>
 				</now-card>
@@ -56,24 +60,30 @@ createCustomElement("x-772283-scope-multicardrender", {
 	renderer: { type: snabbdom },
 	properties: {
 		records: {
-			default: data
+			// default: data
 		},
-		selectedField: {}
+		selectedField: {},
 	},
 
 	// 4-15 : Register Actions in now-ui.json
 	actions: {
 		'ACTION_NAME_A': {},
-		'ACTION_NAME_B': {}
 	},
 	actionHandlers: {
-		'NOW_CARD_ACTIONS#ACTION_CLICKED': (coeffects) => {
-			// console.log(`${coeffects.action.payload.action.label}`);
-			testFunc(coeffects.action.payload.action.label,coeffects);
+		"NOW_CARD_ACTIONS#ACTION_CLICKED": (coeffects) => {
+			const { dispatch } = coeffects;
+			const actionLabel = coeffects.action.payload.action.label;
+			const recordField = coeffects.action.payload.action.forField;
+
+			dispatch("ACTION_NAME_A", {
+				payload: {
+					actionLabel,
+					recordField,
+				},
+			});
 		},
-		'ACTION_NAME_A' : () => console.log('Situation A'),
-		'ACTION_NAME_B' : () => console.log('Situation B')
-	}
+		'ACTION_NAME_A': () => {},
+	},
 });
 
 /**
