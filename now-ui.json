@@ -8,7 +8,15 @@
 				"icon": "document-outline",
 				"description": "A description of my component",
 				"category": "primitives"
-			}
+			},
+			"properties" : [
+				{
+					"name": "JSON Data",
+					"label": "JSON Data", 
+					"readOnly": false,       
+					"required": false
+				}
+			]
 	    }
 	},
 	"scopeName": "x_772283_scope_m_0"
