@@ -20,7 +20,7 @@ const view = (state, { updateState }) => {
 				>
 					<now-card-header
 						tagline={{ label: `${record.property.propertyName}` }}
-						heading={{ label: `${record.property.currentValue} vs ${record.property.newValue}`, size: "md", lines: 2 }}
+						heading={{ label: `${record.property.currentDisplayValue} vs ${record.property.newDisplayValue}`, size: "md", lines: 2 }}
 						caption={{ label: "Select Choice", lines: 2 }}
 					></now-card-header>
 					<now-card-actions
