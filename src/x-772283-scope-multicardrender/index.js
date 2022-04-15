@@ -3,7 +3,7 @@ import snabbdom from "@servicenow/ui-renderer-snabbdom";
 import styles from "./styles.scss";
 import "@servicenow/now-card";
 
-const data = require("./idealData.json");
+// const data = require("./idealData.json");
 
 const view = (state, { updateState }) => {
 	const { properties } = state;
