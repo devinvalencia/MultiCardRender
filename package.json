@@ -1,0 +1,32 @@
+{
+	"name": "scope-multicardrender",
+	"version": "0.0.1",
+	"private": false,
+	"description": "",
+	"keywords": [
+		"ServiceNow",
+		"Now Experience UI Component",
+		"scope-multicardrender"
+	],
+	"readme": "./README.md",
+	"engines": {
+		"node": ">=8.6.0",
+		"npm": ">=5.3.0"
+	},
+	"module": "src/index.js",
+	"dependencies": {
+		"@servicenow/cli-archetype": "20.0.0",
+		"@servicenow/cli-component-archetype": "20.0.0",
+		"@servicenow/library-translate": "quebec",
+		"@servicenow/now-card": "^19.8.2-ecd",
+		"@servicenow/sass-kit": "quebec",
+		"@servicenow/sass-theme": "quebec",
+		"@servicenow/ui-core": "quebec",
+		"@servicenow/ui-renderer-snabbdom": "quebec",
+		"babel-preset-es2015": "^6.24.1"
+	},
+	"devDependencies": {
+		"@servicenow/cli-archetype-dev": "20.0.0",
+		"@servicenow/cli-component-archetype-dev": "20.0.0"
+	}
+}
