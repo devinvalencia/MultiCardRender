@@ -3,10 +3,23 @@ import snabbdom from "@servicenow/ui-renderer-snabbdom";
 import styles from "./styles.scss";
 import "@servicenow/now-card";
 
-// const data = require("./idealData.json");
+// Disable before updating for UI builder
+const data = require("./idealData.json");
 
-const view = (state, { updateState }) => {
-	const { properties } = state;
+
+// 4-15 : Included selectedField in payload
+const testFunc = (label, {dispatch}) => {
+	// updateProperties({currentField: `${record.property.propertyName}`});
+	if (label == 'Merge') {
+		dispatch('ACTION_NAME_A');
+	} else if (label == 'Overwrite Current') {
+		dispatch('ACTION_NAME_B');
+	}
+};
+
+// 4-15 : Update selectedField property on click
+const view = (state, { updateState}) => {
+	const { properties} = state;
 
 	return (
 		<div>
@@ -36,15 +49,31 @@ const view = (state, { updateState }) => {
 	);
 };
 
+// Remote default from records property before putting into ui builder
 createCustomElement("x-772283-scope-multicardrender", {
-	renderer: { type: snabbdom },
 	view,
 	styles,
+	renderer: { type: snabbdom },
 	properties: {
 		records: {
-			default: data,
+			default: data
 		},
+		selectedField: {}
 	},
+
+	// 4-15 : Register Actions in now-ui.json
+	actions: {
+		'ACTION_NAME_A': {},
+		'ACTION_NAME_B': {}
+	},
+	actionHandlers: {
+		'NOW_CARD_ACTIONS#ACTION_CLICKED': (coeffects) => {
+			// console.log(`${coeffects.action.payload.action.label}`);
+			testFunc(coeffects.action.payload.action.label,coeffects);
+		},
+		'ACTION_NAME_A' : () => console.log('Situation A'),
+		'ACTION_NAME_B' : () => console.log('Situation B')
+	}
 });
 
 /**

@@ -11,7 +11,7 @@
 			},
 			"properties" : [
 				{
-					"name": "JSON Data",
+					"name": "records",
 					"label": "JSON Data", 
 					"readOnly": false,       
 					"required": false
