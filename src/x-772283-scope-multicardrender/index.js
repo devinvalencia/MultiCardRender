@@ -67,7 +67,7 @@ createCustomElement("x-772283-scope-multicardrender", {
 
 	// 4-15 : Register Actions in now-ui.json
 	actions: {
-		'ACTION_NAME_A': {},
+		'NOW_MUTTON#CLICKED': {},
 	},
 	actionHandlers: {
 		"NOW_CARD_ACTIONS#ACTION_CLICKED": (coeffects) => {
@@ -75,14 +75,9 @@ createCustomElement("x-772283-scope-multicardrender", {
 			const actionLabel = coeffects.action.payload.action.label;
 			const recordField = coeffects.action.payload.action.forField;
 
-			dispatch("ACTION_NAME_A", {
-				payload: {
-					actionLabel,
-					recordField,
-				},
-			});
+			dispatch("NOW_MUTTON#CLICKED");
 		},
-		'ACTION_NAME_A': () => {},
+		'NOW_MUTTON#CLICKED': () => console.log('test')
 	},
 });
 

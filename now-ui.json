@@ -9,18 +9,20 @@
 				"description": "A description of my component",
 				"category": "primitives"
 			},
+			"actions": [
+				{
+					"description": "Dispatched when the button is clicked",
+					"label": "Button clicked",
+					"name": "NOW_MUTTON#CLICKED",
+					"payload": []
+				}
+			],
 			"properties" : [
 				{
 					"name": "records",
 					"label": "JSON Data", 
 					"readOnly": false,       
 					"required": false
-				}
-			],
-			"actions" : [
-				{
-					"name": "ACTION_NAME_A",
-					"description": "test"
 				}
 			]
 	    }

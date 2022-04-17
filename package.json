@@ -1,12 +1,12 @@
 {
-	"name": "scope-multicardrender",
+	"name": "multicardrender",
 	"version": "0.0.1",
 	"private": false,
 	"description": "",
 	"keywords": [
 		"ServiceNow",
 		"Now Experience UI Component",
-		"scope-multicardrender"
+		"multicardrender"
 	],
 	"readme": "./README.md",
 	"engines": {

@@ -1,0 +1,509 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20220416.194320.5904.0.001.json",
+    "dumpEventTime": "2022-04-16T19:43:20Z",
+    "dumpEventTimeStamp": "1650152600180",
+    "processId": 5904,
+    "cwd": "C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender",
+    "commandLine": [
+      "node",
+      "node_modules/@servicenow/cli-component-archetype-dev/conf/build/pre/run",
+      "--env.target=app:glide",
+      "--mode=production"
+    ],
+    "nodejsVersion": "v12.16.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19044",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 2845343,
+        "nice": 0,
+        "sys": 4165171,
+        "idle": 63077250,
+        "irq": 2109562
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 2445265,
+        "nice": 0,
+        "sys": 1153562,
+        "idle": 66488718,
+        "irq": 104718
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 4593468,
+        "nice": 0,
+        "sys": 1140515,
+        "idle": 64353562,
+        "irq": 22859
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 2613906,
+        "nice": 0,
+        "sys": 798046,
+        "idle": 66675593,
+        "irq": 19046
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1465328,
+        "nice": 0,
+        "sys": 952515,
+        "idle": 67669687,
+        "irq": 38062
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1840156,
+        "nice": 0,
+        "sys": 1011359,
+        "idle": 67236015,
+        "irq": 38593
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1837703,
+        "nice": 0,
+        "sys": 1127125,
+        "idle": 67122703,
+        "irq": 32265
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1819375,
+        "nice": 0,
+        "sys": 990546,
+        "idle": 67277609,
+        "irq": 37953
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1861984,
+        "nice": 0,
+        "sys": 980281,
+        "idle": 67245265,
+        "irq": 32640
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1653390,
+        "nice": 0,
+        "sys": 886703,
+        "idle": 67547437,
+        "irq": 32687
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1965812,
+        "nice": 0,
+        "sys": 1204890,
+        "idle": 66916828,
+        "irq": 30906
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1537046,
+        "nice": 0,
+        "sys": 987500,
+        "idle": 67562968,
+        "irq": 29921
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1551281,
+        "nice": 0,
+        "sys": 778171,
+        "idle": 67758062,
+        "irq": 30718
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1611000,
+        "nice": 0,
+        "sys": 816515,
+        "idle": 67660000,
+        "irq": 30656
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 2655109,
+        "nice": 0,
+        "sys": 1287765,
+        "idle": 66144640,
+        "irq": 39609
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+        "speed": 2304,
+        "user": 1816562,
+        "nice": 0,
+        "sys": 934343,
+        "idle": 67336609,
+        "irq": 29718
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "e8:f4:08:0f:0a:00",
+        "address": "fe80::5da5:36be:9e2c:6c23",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 22
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "e8:f4:08:0f:0a:00",
+        "address": "192.168.86.205",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Teredo Tunneling Pseudo-Interface",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "2001:0:34e4:6f7e:38db:1f76:bbf1:ae3f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Teredo Tunneling Pseudo-Interface",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::38db:1f76:bbf1:ae3f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 20
+      }
+    ],
+    "host": "MSI"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff749be19f9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff749be5e1c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff749be4dd8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff749ce34cb",
+      "symbol": "v8::base::CPU::has_sse+38363"
+    },
+    {
+      "pc": "0x00007ff74a4f9f4e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff74a4e2021",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff74a3ae57c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff74a3b97d0",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff74a3b62f4",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff74a3abb13",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff74a3aa184",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff74a3cb36d",
+      "symbol": "v8::internal::Factory::NewFillerObject+61"
+    },
+    {
+      "pc": "0x00007ff74a130c51",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
+    },
+    {
+      "pc": "0x00007ff74a944ddd",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x0000029764b8bb90",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2151473152,
+    "totalCommittedMemory": 2151473152,
+    "usedMemory": 2146733840,
+    "availableMemory": 48476056,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047456,
+        "used": 120864,
+        "available": 926592
+      },
+      "old_space": {
+        "memorySize": 1541292032,
+        "committedMemory": 1541292032,
+        "capacity": 1539521448,
+        "used": 1539361584,
+        "available": 159864
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 430080,
+        "capacity": 326816,
+        "used": 326816,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1576960,
+        "committedMemory": 1576960,
+        "capacity": 1182400,
+        "used": 1182400,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 605192192,
+        "committedMemory": 605192192,
+        "capacity": 605165080,
+        "used": 605165080,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 544288,
+        "used": 544288,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 360.453,
+    "kernelCpuSeconds": 2.734,
+    "cpuConsumptionPercent": 121.875,
+    "maxRss": 2480193536,
+    "pageFaults": {
+      "IORequired": 1860623,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1920,
+      "writes": 6
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\devin\\AppData\\Roaming",
+    "asl.log": "Destination=file",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_12528_DCTMQBHUVIRLUSFL",
+    "COLORTERM": "truecolor",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "MSI",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "configsetroot": "C:\\WINDOWS\\ConfigSetRoot",
+    "dp0": "C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\.bin\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FORCE_COLOR": "true",
+    "GIT_ASKPASS": "c:\\Users\\devin\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\devin",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\devin\\AppData\\Local",
+    "LOGONSERVER": "\\\\MSI",
+    "NODE_PATH": "C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-component-archetype\\node_modules;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-archetype\\node_modules;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-component-archetype-dev\\node_modules;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-archetype-dev\\node_modules",
+    "NUMBER_OF_PROCESSORS": "16",
+    "NVM_HOME": "C:\\Users\\devin\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OneDrive": "C:\\Users\\devin\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\devin\\OneDrive",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\.bin;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-component-archetype\\node_modules\\.bin;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-archetype\\node_modules\\.bin;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-component-archetype-dev\\node_modules\\.bin;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-archetype-dev\\node_modules\\.bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\devin\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\ServiceNow CLI\\bin;C:\\MinGW\\bin;C:\\Program Files\\Pandoc\\;C:\\Users\\devin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\devin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\devin\\AppData\\Roaming\\npm",
+    "Path": "C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\.bin;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-component-archetype\\node_modules\\.bin;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-archetype\\node_modules\\.bin;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-component-archetype-dev\\node_modules\\.bin;C:\\Users\\devin\\Pictures\\Dev Projects\\MultiCardRender\\node_modules\\@servicenow\\cli-archetype-dev\\node_modules\\.bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\devin\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\ServiceNow CLI\\bin;C:\\MinGW\\bin;C:\\Program Files\\Pandoc\\;C:\\Users\\devin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\devin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\devin\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.CPL",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "a502",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Users\\devin\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\devin\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.66.2",
+    "TMP": "C:\\Users\\devin\\AppData\\Local\\Temp",
+    "USERDOMAIN": "MSI",
+    "USERDOMAIN_ROAMINGPROFILE": "MSI",
+    "USERNAME": "devin",
+    "USERPROFILE": "C:\\Users\\devin",
+    "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "--ms-enable-electron-run-as-node",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\devin\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\devin\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-141df8b209-sock",
+    "windir": "C:\\WINDOWS",
+    "_BUILDER_ARGS_CUSTOM_FLAGS": "[\"--env.target=app:glide\",\"--mode=production\"]",
+    "_BUILDER_ARGS_LOG_LEVEL": "error",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\Program Files\\Bonjour\\mdnsNSP.dll"
+  ]
+}
