@@ -13,10 +13,12 @@
 				{
 					"description": "Dispatched when the button is clicked",
 					"label": "Button clicked",
-					"name": "NOW_MUTTON#CLICKED",
+					"name": "NOW_LUTTON#CLICKED",
 					"payload": []
 				}
 			],
+			"slots": [],
+			"handlers": [],
 			"properties" : [
 				{
 					"name": "records",
