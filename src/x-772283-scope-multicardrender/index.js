@@ -66,8 +66,8 @@ createCustomElement("x-772283-scope-multicardrender", {
 	},
 
 	// 4-15 : Register Actions in now-ui.json
-	actions: {
-		'NOW_MUTTON#CLICKED': {},
+	dispatches: {
+		'NOW_LUTTON#CLICKED': {schema: {type: 'object'}},
 	},
 	actionHandlers: {
 		"NOW_CARD_ACTIONS#ACTION_CLICKED": (coeffects) => {
@@ -78,7 +78,7 @@ createCustomElement("x-772283-scope-multicardrender", {
 			dispatch("NOW_MUTTON#CLICKED");
 		},
 		'NOW_MUTTON#CLICKED': () => console.log('test')
-	},
+	}
 });
 
 /**
