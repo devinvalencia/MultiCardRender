@@ -85,4 +85,9 @@ createCustomElement("x-772283-scope-multicardrender", {
  * Need to return JSON data in different format where each object in array includes new and old value properties (as well as associated record number)
  * For each property in first object, add newValue property
  * For newValue property, include property object of the original property in that one
+ * 
+ * 
+ * 
+ * 4/19 - if record.property type choice, dont allow for merge
+ * Need to include propertyType in each object in ideal data array
  */
