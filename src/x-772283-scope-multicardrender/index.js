@@ -67,11 +67,12 @@ createCustomElement("x-772283-scope-multicardrender", {
 	actionHandlers: {
 		"NOW_CARD_ACTIONS#ACTION_CLICKED": (coeffects) => {
 			const { dispatch } = coeffects;
-			// const actionLabel = coeffects.action.payload.action.label;
-			// const recordField = coeffects.action.payload.action.forField;
+			const actionLabel = coeffects.action.payload.action.label;
+			const recordField = coeffects.action.payload.action.forField;
 
 			dispatch("TEST_ACTION_1",{
-				event: e
+				field: recordField,
+				choice: actionLabel
 			});
 		}
 	},
