@@ -1,35 +1,46 @@
 [
   {
     "property": {
+      "propertyName": "assigned_to",
+      "currentRecord": "INC0010004",
+      "currentValue": null,
+      "currentDisplayValue": null,
+      "newRecord": "INC0000060",
+      "newValue": "5137153cc611227c000bbd1bd8cd2007",
+      "newDisplayValue": "David Loo"
+    }
+  },
+  {
+    "property": {
       "propertyName": "category",
-      "currentRecord": "INC0008111",
+      "currentRecord": "INC0010004",
       "currentValue": "inquiry",
       "currentDisplayValue": "Inquiry / Help",
-      "newRecord": "INC0010001",
-      "newValue": "software",
-      "newDisplayValue": "Software"
+      "newRecord": "INC0000060",
+      "newValue": "inquiry",
+      "newDisplayValue": "Inquiry / Help"
     }
   },
   {
     "property": {
-      "propertyName": "assigned_to",
-      "currentRecord": "INC0008111",
-      "currentValue": "62826bf03710200044e0bfc8bcbe5df1",
-      "currentDisplayValue": "Abel Tuter (Architect)",
-      "newRecord": "INC0010001",
-      "newValue": "712150f4530360100999ddeeff7b1227",
-      "newDisplayValue": "Antony Alldis"
+      "propertyName": "subcategory",
+      "currentRecord": "INC0010004",
+      "currentValue": null,
+      "currentDisplayValue": null,
+      "newRecord": "INC0000060",
+      "newValue": "email",
+      "newDisplayValue": "Email"
     }
   },
   {
     "property": {
-      "propertyName": "short_description",
-      "currentRecord": "INC0008111",
-      "currentValue": "tester 1",
-      "currentDisplayValue": "tester 1",
-      "newRecord": "INC0010001",
-      "newValue": "Email server is down.",
-      "newDisplayValue": "Antony Email server is down."
+      "propertyName": "state",
+      "currentRecord": "INC0010004",
+      "currentValue": "7",
+      "currentDisplayValue": "Closed",
+      "newRecord": "INC0000060",
+      "newValue": "7",
+      "newDisplayValue": "Closed"
     }
   }
 ]

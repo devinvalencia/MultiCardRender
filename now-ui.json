@@ -11,10 +11,8 @@
 			},
 			"actions": [
 				{
-					"description": "Dispatched when the button is clicked",
-					"label": "Button clicked",
-					"name": "NOW_MUTTON#CLICKED",
-					"payload": []
+					"name": "TEST_ACTION_1",
+					"description": "Dispatched when the button is clicked"
 				}
 			],
 			"properties" : [

@@ -4,7 +4,7 @@ import styles from "./styles.scss";
 import "@servicenow/now-card";
 
 // Disable before updating for UI builder
-// const data = require("./idealData.json");
+const data = require("./idealData.json");
 
 // 4-15 : Update selectedField property on click
 const view = (state, { updateState }) => {
@@ -60,24 +60,20 @@ createCustomElement("x-772283-scope-multicardrender", {
 	renderer: { type: snabbdom },
 	properties: {
 		records: {
-			// default: data
+			default: data
 		},
 		selectedField: {},
-	},
-
-	// 4-15 : Register Actions in now-ui.json
-	actions: {
-		'NOW_MUTTON#CLICKED': {},
 	},
 	actionHandlers: {
 		"NOW_CARD_ACTIONS#ACTION_CLICKED": (coeffects) => {
 			const { dispatch } = coeffects;
-			const actionLabel = coeffects.action.payload.action.label;
-			const recordField = coeffects.action.payload.action.forField;
+			// const actionLabel = coeffects.action.payload.action.label;
+			// const recordField = coeffects.action.payload.action.forField;
 
-			dispatch("NOW_MUTTON#CLICKED");
-		},
-		'NOW_MUTTON#CLICKED': () => console.log('test')
+			dispatch("TEST_ACTION_1",{
+				event: e
+			});
+		}
 	},
 });
 
